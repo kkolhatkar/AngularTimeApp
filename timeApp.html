@@ -1,0 +1,13 @@
+<html ng-app="myApp">
+<head>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="myFnc">
+        <p>Please enter your name: <input ng-model="userName"></input></p>
+        <p>Hi! {{userName}} Time now is {{time}}</p>
+        <button ng-click="updateTime()">Update Time</button>
+    </div>
+</body>
+</html>

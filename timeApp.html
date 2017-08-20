@@ -1,13 +1,24 @@
 <html ng-app="myApp">
+
 <head>
     <script src="angular.js"></script>
     <script src="app.js"></script>
 </head>
+
 <body>
     <div ng-controller="myFnc">
-        <p>Please enter your name: <input ng-model="userName"></input></p>
-        <p>Hi! {{userName}} Time now is {{time}}</p>
-        <button ng-click="updateTime()">Update Time</button>
+        <p>Please enter your name: <input ng-model="userName"></input>
+        </p>
+        <p>Hi! {{userName}} Time now is {{time}}
+            <button ng-click="updateTime()">Update Time</button></p>
+        <p>Check box: <input type="checkbox" ng-model="booleanValue"> Value is {{booleanValue}}</p>
+        <p> Choose a Radio button:
+            <input type="radio" ng-model="radioValue" value="firstRadio">First Radio</input>
+            <input type="radio" ng-model="radioValue" value="SecondRadio">Second Radio</input>
+            <input type="radio" ng-model="radioValue" value="ThirdRadio">Third Radio</input>
+        </p>
+        <p>The value of Radio button is {{radioValue}}</p>
     </div>
 </body>
+
 </html>
